@@ -1,12 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #42c3d7;
 }
 
 body {
@@ -24,3 +24,106 @@ h1 span {
   color: #a5c63b;
   text-transform: uppercase;
 }
+
+.logo {
+  width: 334px;
+  height: 451px;
+  margin: 0 auto;
+  margin-top: 90px;
+  position: relative;
+}
+
+.logo div {
+  background-color: #a5c63b;
+}
+
+.head {
+  width: 100%;
+  position: absolute;
+  height: 154px;
+  border-top-right-radius: 500px;
+  border-top-left-radius: 500px;
+}
+
+/* eyes */
+.head:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F4F7F5;
+  left: 80px;
+  top: 66px;
+}
+
+.head:after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F4F7F5;
+  right: 80px;
+  top: 66px;
+}
+
+.body {
+  width: 100%;
+  height: 284px;
+  position: absolute;
+  bottom: 0;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.left-antenna, .right-antenna {
+  position: absolute;
+  width: 9px;
+  height: 80px;
+  border-radius: 10px;
+  top: -20px;
+}
+
+.left-antenna {
+  left: 60px;
+  transform: rotate(-30deg);
+}
+
+.right-antenna {
+  right: 60px;
+  transform: rotate(30deg);
+}
+
+.limbs {
+  width: 77px;
+  height: 233px;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.left-arm, .right-arm {
+  top: 0;
+}
+
+.left-arm {
+  left: -95px;
+}
+
+.right-arm {
+  right: -95px;
+}
+
+.left-leg, .right-leg {
+  bottom: -138px;
+}
+
+.left-leg {
+  left: 70px;
+}
+
+.right-leg {
+  right: 70px;
+}
+
+/* Hover */
