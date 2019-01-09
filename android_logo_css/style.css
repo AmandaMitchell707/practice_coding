@@ -25,7 +25,7 @@ h1 span {
   text-transform: uppercase;
 }
 
-.logo {
+.android {
   width: 334px;
   height: 451px;
   margin: 0 auto;
@@ -33,7 +33,7 @@ h1 span {
   position: relative;
 }
 
-.logo div {
+.android div {
   background-color: #a5c63b;
 }
 
@@ -45,7 +45,7 @@ h1 span {
   border-top-left-radius: 500px;
 }
 
-/* eyes */
+/* left eye */
 .head:before {
   content: '';
   width: 30px;
@@ -57,6 +57,7 @@ h1 span {
   top: 66px;
 }
 
+/* right eye */
 .head:after {
   content: '';
   width: 30px;
@@ -115,7 +116,7 @@ h1 span {
 }
 
 .left-leg, .right-leg {
-  bottom: -138px;
+  bottom: -115px;
 }
 
 .left-leg {
@@ -127,3 +128,23 @@ h1 span {
 }
 
 /* Hover */
+.android *, .android *:after, .android *:before {
+  transition: all .25s ease-out;
+}
+
+.android:hover .head {
+  transform: translate(-4px, -5px) rotate(-5deg);
+}
+
+.android:hover .left-arm {
+  transform: translate(-6px, -5px) rotate(25deg);
+}
+
+.android:hover .head:after {
+  height: 2px;
+  transform: rotate(-5deg);
+}
+
+.android:hover .right-leg {
+  bottom: -108px;
+}
